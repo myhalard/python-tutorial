@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install
+        run: make install
+      - name: lint
+        run: make lint
+      - name: test
+        run: make test
