@@ -3,5 +3,8 @@ __pycache__
 .venv
 .fastapi_venv
 .flask_venv
+.click_venv
 .venv_name
 .coverage
+build
+yourcli.egg-info
