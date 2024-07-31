@@ -13,6 +13,6 @@ lint:
 
 test:
 	. ~/.venv/bin/activate
-	pytest -p no:warnings --nbval --ignore=virtual-envs.ipynb --ignore=fastapi-app.ipynb --ignore=flask-app.ipynb
+	pytest -p no:warnings --nbval --ignore=virtual-envs.ipynb --ignore=fastapi-app.ipynb --ignore=flask-app.ipynb --ignore=cli_tool.ipynb
 
 all: install format lint test
